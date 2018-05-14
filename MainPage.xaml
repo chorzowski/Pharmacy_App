@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AptekaN.MainPage"
+             BackgroundImage="tlo.jpg">
+    
+    
+
+    <Grid>
+        <StackLayout>
+            <Label Text="Mysia Pysia Aplikacja !!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="White"
+                   FontSize="Large"
+                   Margin="0,100,0,0"/>
+        </StackLayout>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        
+        
+
+            <Label x:Name="EtanolLabel"
+               Grid.Row="1"
+               Grid.Column="0"        
+               FontSize="30"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+                TextColor="White"  
+               Text="Etanol"
+                   
+                Margin="200,0,0,0"
+                   />
+               
+        <Label x:Name="WitaminyLabel"
+               Grid.Row="1"
+               Grid.Column="1"
+               FontSize="30"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="White"
+               Text="Witaminy"
+               Margin="200,0,0,0"/>
+        <Label x:Name="NystatynaLabel"
+               Grid.Row="3"
+               Grid.Column="0"
+               FontSize="30"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="White"
+               Text="Nystatyny"
+               Margin="200,0,0,0"/>
+        <Label x:Name="OlejekMietowyLabel"
+               Grid.Row="3"
+               Grid.Column="1"
+               FontSize="30"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Text="OlejekMietowy"
+               TextColor="White"
+                Margin="200,0,0,0"
+               />
+        <Button x:Name="EtanolButton"
+                Grid.Row="0"
+               Grid.Column="0"              
+                
+                Clicked="EtanolPage"
+                VerticalOptions="Center"
+        HorizontalOptions="Start"
+        WidthRequest="300"
+        Margin="200,200,0,0"
+        BorderWidth="2"
+        BorderColor="Red"
+        BorderRadius="2"
+        IsEnabled="True"
+        FontSize="Medium"
+        Image="etanol.jpg"
+                />
+ 
+        <Button x:Name="WitaminyButton"
+                Grid.Row="0"
+               Grid.Column="1"              
+                Image="vitamins.jpg"
+                Clicked="WitaminyPage"
+                VerticalOptions="Center"
+        HorizontalOptions="Start"
+        WidthRequest="300"
+        Margin="200,200,0,0"
+        BorderWidth="2"
+        BorderColor="Red"
+        BorderRadius="2"
+        IsEnabled="True"
+        FontSize="Medium"
+        />
+        <Button x:Name="EstatynaButton"
+                Grid.Row="2"
+               Grid.Column="0"
+                Image="statyny.jpg"
+                Clicked="EstatynaPage"
+                 VerticalOptions="Center"
+        HorizontalOptions="Start"
+        WidthRequest="300"
+        Margin="200,0,0,0"
+        BorderWidth="2"
+        BorderColor="Red"
+        BorderRadius="2"
+        IsEnabled="True"
+        FontSize="Medium"
+                />
+        <Button x:Name="OlejekMietowyButton"
+                Grid.Row="2"
+               Grid.Column="1"              
+                Image="mieta.jpg"
+                Clicked="OlejekMietowyPage"
+                VerticalOptions="Center"
+        HorizontalOptions="Start"
+        WidthRequest="300"
+        Margin="200,0,0,0"
+        BorderWidth="2"
+        BorderColor="Red"
+        BorderRadius="2"
+        IsEnabled="True"
+        FontSize="Medium"
+                />
+    </Grid>
+</ContentPage>

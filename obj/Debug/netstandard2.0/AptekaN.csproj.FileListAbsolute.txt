@@ -1,0 +1,15 @@
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\bin\Debug\netstandard2.0\AptekaN.deps.json
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\bin\Debug\netstandard2.0\AptekaN.dll
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\bin\Debug\netstandard2.0\AptekaN.pdb
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.csprojResolveAssemblyReference.cache
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.csproj.CoreCompileInputs.cache
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.App.xaml.g.cs
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.AssemblyInfoInputs.cache
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.AssemblyInfo.cs
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.dll
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.pdb
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.EtanolPage.xaml.g.cs
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.MainPage.xaml.g.cs
+c:\users\adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.WitaminyPage.xaml.g.cs
+C:\Users\Adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.EstatynaPage.xaml.g.cs
+C:\Users\Adrian\source\repos\AptekaN\AptekaN\AptekaN\obj\Debug\netstandard2.0\AptekaN.OlejekMietowyPage.xaml.g.cs
