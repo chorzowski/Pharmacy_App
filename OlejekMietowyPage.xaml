@@ -1,15 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AptekaN.OlejekMietowyPage">
+             x:Class="AptekaN.OlejekMietowyPage"
+             BackgroundImage="tlo.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Olejek Mietowy!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Wyrób olekjów"
+                   TextColor="White"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Entry x:Name="Liczba1"
+                   Placeholder="Ile gram zapisano na recepcie ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,100,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Transparent"/>
+
+            <Entry x:Name="Liczba2"
+                   Placeholder="Ile ml zapisano na recepcie ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,100,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Transparent"/>
+
+            <Entry x:Name="Liczba3"
+                   Placeholder="Ile kropel zapisano na recepcie ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,100,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Transparent"/>
+
+            <Button x:Name="Button1"
+                   Text="Oblicz"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="Licz"/>
+
             <Button x:Name="MainMenuButton"
-                Text="Etanol"
-                Clicked="MainMenu"/>
+                Text="Powrót do menu głównego"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="MainMenu"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

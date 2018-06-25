@@ -1,15 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AptekaN.WitaminyPage">
+             x:Class="AptekaN.WitaminyPage" BackgroundImage="tlo.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Witaminy!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Welcome to Witaminy !!"
+                   TextColor="White"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Jaką ilość witaminy mamy zapisaną na recepcie ?"
+                   TextColor="White"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"/>
+            <Entry x:Name="Liczba1"
+                   Placeholder="Ile gr ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,25,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Transparent"/>
+            <Entry x:Name="Liczba2"
+                   Placeholder="Ile ml ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,25,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"           
+                   BackgroundColor="Transparent"/>
+            <Entry x:Name="Liczba3"
+                   Placeholder="Ile kropel ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,25,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Transparent"/>
+            <Picker x:Name="picWitaminy" Title="Wybierz witaminę którą chcesz uzyskać:" HorizontalOptions="CenterAndExpand" SelectedIndexChanged="InitPickerWitaminy"  TextColor="White"  Margin="0,25,0,0">
+                <Picker.Items>
+                    <x:String>Witamina A Hasco</x:String>
+                    <x:String>Witamina A Medana</x:String>
+                    <x:String>Witamina E Hasco</x:String>
+                    <x:String>Witamina E Medana</x:String>
+                    <x:String>Witamina A + D3</x:String>
+                    <x:String>Witamina D3 (DEVICAD)</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button x:Name="Button1"
+                   Text="Oblicz"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="InitPickerWitaminy"/>
             <Button x:Name="MainMenuButton"
-                Text="Etanol"
-                Clicked="MainMenu"/>
+                Text="Powrót do menu głównego"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="MainMenu"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

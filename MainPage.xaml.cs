@@ -8,21 +8,21 @@ using Xamarin.Forms;
 
 namespace AptekaN
 {
-	public partial class MainPage : ContentPage
-	{
+    public partial class MainPage : ContentPage
+    {
         public MainPage()
         {
             InitializeComponent();
         }
 
-            async void EtanolPage(object sender, EventArgs e)
-            {
-                await Navigation.PushAsync(new EtanolPage());
-            }
-            async void WitaminyPage(object sender, EventArgs e)
-            {
-                await Navigation.PushAsync(new WitaminyPage());
-            }
+        async void EtanolPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EtanolPage());
+        }
+        async void WitaminyPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new WitaminyPage());
+        }
         async void EstatynaPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new EstatynaPage());

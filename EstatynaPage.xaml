@@ -1,15 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AptekaN.EstatynaPage">
+             x:Class="AptekaN.EstatynaPage"
+             BackgroundImage="tlo.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Estatyna!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="Powrot"
-                    Text="Powrot"
-                    Clicked="MainMenu"/>
+            <Label Text="Obliczanie Nystatyny"
+                   TextColor="White"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="Liczba1"
+                   Placeholder="Ile jednostek międzynarodowych zapisano na recepcie ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,100,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Transparent"/>
+            <Entry x:Name="Liczba2"
+                   Placeholder="Jaką nystatyną dysponujemy IU/mg ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,100,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"           
+                   BackgroundColor="Transparent"/>
+            <Button x:Name="Button1"
+                   Text="Oblicz"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="Licz"/>
+            <Button x:Name="MainMenuButton"
+                Text="Powrót do menu głównego"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="MainMenu"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

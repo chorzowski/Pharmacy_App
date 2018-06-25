@@ -1,15 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AptekaN.EtanolPage">
+             x:Class="AptekaN.EtanolPage"
+             BackgroundImage="tlo.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Etanole"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
+           
+            <Label Text="Obliczanie stężenia Etanoli"
+                   TextColor="White"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+            
+            <Label Text="Jaki roztwór chcemy otrzymać"
+                   TextColor="White"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"/>
+            <Picker x:Name="pic" Title="Promile" HorizontalOptions="CenterAndExpand" SelectedIndexChanged="InitPicker"  TextColor="White">
+                <Picker.Items>
+                    <x:String>30</x:String>
+                    <x:String>40</x:String>
+                    <x:String>50</x:String>
+                    <x:String>60</x:String>
+                    <x:String>70</x:String>
+                    <x:String>80</x:String>
+                    <x:String>90</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry x:Name="Liczba1"
+                   Placeholder="Ile gram roztworu chcemy uzyskać ?"
+                   PlaceholderColor="White"
+                   FontSize="Large"
+                   Margin="0,100,0,0"
+                   TextColor="White"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   BackgroundColor="Transparent"/>
+            <Button x:Name="Button1"
+                   Text="Oblicz"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="InitPicker"/>
             <Button x:Name="MainMenuButton"
-                Text="Etanol"
-                Clicked="MainMenu"/>
+                Text="Powrót do menu głównego"
+                   TextColor="White"
+                   WidthRequest="300"
+                   BorderWidth="2"
+                   BorderColor="Red"
+                   BorderRadius="2"
+                   IsEnabled="True"
+                   FontSize="Medium"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   Clicked="MainMenu"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
